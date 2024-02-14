@@ -14,7 +14,7 @@
       "id" : "d7c4be00-b3e2-11ee-9f06-23844b191ab9"
     },
     "name" : "Root Rule Chain",
-    "root" : true,
+    "root" : false,
     "type" : "CORE"
   },
   "metaData" : {

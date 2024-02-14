@@ -5,7 +5,7 @@
     "configuration" : {
       "description" : "",
       "widgets" : {
-        "9c281512-e614-6fee-8692-9c84cd90200d" : {
+        "dfb50ca5-b422-7eaa-09ee-c102fe07c17c" : {
           "typeFullFqn" : "system.charts.basic_timeseries",
           "type" : "timeseries",
           "sizeX" : 8,
@@ -21,7 +21,7 @@
                 "label" : "Temperature",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.6535597661691164,
+                "_hash" : 0.6588776296446117,
                 "units" : "°C",
                 "decimals" : 0
               } ],
@@ -110,7 +110,7 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "9c281512-e614-6fee-8692-9c84cd90200d"
+          "id" : "dfb50ca5-b422-7eaa-09ee-c102fe07c17c"
         }
       },
       "states" : {
@@ -120,8 +120,8 @@
           "layouts" : {
             "main" : {
               "widgets" : {
-                "9c281512-e614-6fee-8692-9c84cd90200d" : {
-                  "sizeX" : 15,
+                "dfb50ca5-b422-7eaa-09ee-c102fe07c17c" : {
+                  "sizeX" : 14,
                   "sizeY" : 13,
                   "row" : 0,
                   "col" : 0

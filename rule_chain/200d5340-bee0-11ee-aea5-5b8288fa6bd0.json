@@ -74,23 +74,23 @@
       "type" : "True"
     }, {
       "fromIndex" : 15,
-      "toIndex" : 17,
+      "toIndex" : 18,
       "type" : "True"
     }, {
-      "fromIndex" : 16,
+      "fromIndex" : 17,
       "toIndex" : 14,
       "type" : "Success"
     }, {
-      "fromIndex" : 17,
-      "toIndex" : 16,
+      "fromIndex" : 18,
+      "toIndex" : 17,
       "type" : "True"
     } ],
     "firstNodeIndex" : 6,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 980,
-        "layoutY" : 32
+        "layoutX" : 1045,
+        "layoutY" : 101
       },
       "configuration" : {
         "tellFailureIfAbsent" : false,
@@ -394,8 +394,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 772,
-        "layoutY" : 45
+        "layoutX" : 842,
+        "layoutY" : 49
       },
       "configuration" : {
         "topicPattern" : "/telemetry",
@@ -428,8 +428,8 @@
     }, {
       "additionalInfo" : {
         "description" : "Guardamos las variables que separamos de los beacons G1. ",
-        "layoutX" : 2000,
-        "layoutY" : 32
+        "layoutX" : 1974,
+        "layoutY" : 22
       },
       "configuration" : {
         "defaultTTL" : 0,
@@ -438,7 +438,7 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
@@ -451,13 +451,36 @@
     }, {
       "additionalInfo" : {
         "description" : "Validamos que la Mac recibida sea valida",
-        "layoutX" : 1251,
-        "layoutY" : 32
+        "layoutX" : 1239,
+        "layoutY" : 20
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "var arr = [\n    metadata.ss_macTemperaturaHumedad,\n    metadata.ss_macTemperaturaHumedad2,\n    metadata.ss_macTemperaturaHumedad3,\n    metadata.ss_macTemperaturaHumedad4,\n    metadata.ss_macTemperaturaHumedad5,\n    metadata.ss_macPuerta,\n    metadata.ss_macLiquidos,\n    metadata.ss_macMiniSplit1,\n    metadata.ss_macMiniSplit2,\n    metadata.ss_macMiniSplit3,\n    metadata.ss_macMiniSplit4,\n    metadata.ss_macMiniSplit5,\n    metadata.ss_macCFE,\n    metadata.ss_macCFE2,\n    metadata.ss_macCFE3,\n    metadata.ss_macUPS,\n    metadata.ss_macUPS2,\n    metadata.ss_macUPS3\n];\n\nvar found = false;\n\nfor (var i = 0; i < arr.length; i++) {\n  if (arr[i] === msg.mac) {\n    found = true;\n    break;\n  }\n}\n\nreturn found;",
+        "jsScript" : "var arr = [\n    metadata.ss_macTemperaturaHumedad,\n    metadata.ss_macTemperaturaHumedad2,\n    metadata.ss_macTemperaturaHumedad3,\n    metadata.ss_macTemperaturaHumedad4,\n    metadata.ss_macTemperaturaHumedad5,\n    metadata.ss_macPuerta,\n    metadata.ss_macLiquidos,\n    metadata.ss_macMiniSplit1,\n    metadata.ss_macMiniSplit2,\n    metadata.ss_macMiniSplit3,\n    metadata.ss_macMiniSplit4,\n    metadata.ss_macMiniSplit5,\n    metadata.ss_macCFE,\n    metadata.ss_macCFE2,\n    metadata.ss_macCFE3,\n    metadata.ss_macUPS,\n    metadata.ss_macUPS2,\n    metadata.ss_macUPS3\n];\n\nvar found = false;\n\nfor (var i = 0; i < arr.length; i++) {\n  if (arr[i] === msg.mac) {\n    found = true;\n    break;\n  }\n}\n\nreturn found === true;",
         "tbelScript" : "return msg.temperature > 20;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "4ca53360-bee4-11ee-aea5-5b8288fa6bd0"
+      },
+      "name" : "Mac",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Validamos que el Type sea valido y en el caso de S1 se valida que la temperatura sea valida de igual forma",
+        "layoutX" : 1499,
+        "layoutY" : 19
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function nextRelation(metadata, msg) {\n    return [];\n}\n\nvar attributeName = [];\nattributeName[metadata.ss_macTemperaturaHumedad] = \"S1\";\nattributeName[metadata.ss_macTemperaturaHumedad2] = \"S1\";\nattributeName[metadata.ss_macTemperaturaHumedad3] = \"S1\";\nattributeName[metadata.ss_macTemperaturaHumedad4] = \"S1\";\nattributeName[metadata.ss_macTemperaturaHumedad5] = \"S1\";\nattributeName[metadata.ss_macPuerta] = \"S4\";\nattributeName[metadata.ss_macLiquidos] = \"S4\";\nattributeName[metadata.ss_macMiniSplit1] = \"S4\";\nattributeName[metadata.ss_macMiniSplit2] = \"S4\";\nattributeName[metadata.ss_macMiniSplit3] = \"S4\";\nattributeName[metadata.ss_macMiniSplit4] = \"S4\";\nattributeName[metadata.ss_macMiniSplit5] = \"S4\";\nattributeName[metadata.ss_macCFE] = \"S4\";\nattributeName[metadata.ss_macCFE2] = \"S4\";\nattributeName[metadata.ss_macCFE3] = \"S4\";\nattributeName[metadata.ss_macUPS] = \"S4\";\nattributeName[metadata.ss_macUPS2] = \"S4\";\nattributeName[metadata.ss_macUPS3] = \"S4\";\n\n\nif(msg.type === attributeName[msg.mac]) {\n    if(msg.type === 'S1'){\n        var temperaturaValida = (msg.temperature <= 0 || msg.temperature >= 0.01) ? true : false;\n        if(!temperaturaValida){\n            return [];\n        }\n    }\n    return msg.type;\n}\nreturn nextRelation(metadata, msg);",
+        "tbelScript" : "function nextRelation(metadata, msg) {\n    return ['one','nine'];\n}\nif(msgType == 'POST_TELEMETRY_REQUEST') {\n    return ['two'];\n}\nreturn nextRelation(metadata, msg);"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -465,17 +488,17 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "4ca53360-bee4-11ee-aea5-5b8288fa6bd0"
+        "id" : "24c46d80-bef2-11ee-aea5-5b8288fa6bd0"
       },
-      "name" : "ValidarMac",
+      "name" : "Type",
       "ruleChainId" : null,
       "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+      "type" : "org.thingsboard.rule.engine.filter.TbJsSwitchNode"
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1748,
-        "layoutY" : 31
+        "layoutX" : 1725,
+        "layoutY" : 18
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -490,15 +513,15 @@
         "entityType" : "RULE_NODE",
         "id" : "8a84e680-bef3-11ee-aea5-5b8288fa6bd0"
       },
-      "name" : "GenerarObjeto",
+      "name" : "Prueba",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     }, {
       "additionalInfo" : {
         "description" : "Validamos que el Type sea valido y en el caso de S1 se valida que la temperatura sea valida de igual forma",
-        "layoutX" : 1500,
-        "layoutY" : 31
+        "layoutX" : 1516,
+        "layoutY" : 189
       },
       "configuration" : {
         "scriptLang" : "JS",
@@ -513,7 +536,7 @@
         "entityType" : "RULE_NODE",
         "id" : "8737c840-befc-11ee-aea5-5b8288fa6bd0"
       },
-      "name" : "ValidarType",
+      "name" : "Type",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
