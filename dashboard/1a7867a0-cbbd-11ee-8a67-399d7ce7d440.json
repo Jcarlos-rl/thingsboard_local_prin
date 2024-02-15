@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "assignedCustomers" : null,
+    "assignedCustomers" : [ ],
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -165,7 +165,7 @@
             "resolveMultiple" : false,
             "singleEntity" : {
               "entityType" : "DEVICE",
-              "id" : "c8a47240-cbba-11ee-8a67-399d7ce7d440"
+              "id" : "33d22d20-cc31-11ee-a15d-5578c62b7072"
             }
           }
         }
@@ -211,7 +211,10 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "1a7867a0-cbbd-11ee-8a67-399d7ce7d440"
+    },
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "1a7867a0-cbbd-11ee-8a67-399d7ce7d440"

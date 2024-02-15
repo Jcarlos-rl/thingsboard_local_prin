@@ -6,7 +6,10 @@
     },
     "configuration" : null,
     "debugMode" : false,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "099c5520-cbba-11ee-8a67-399d7ce7d440"
+    },
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
       "id" : "09edf790-cbba-11ee-8a67-399d7ce7d440"
@@ -370,7 +373,7 @@
         "layoutY" : 671
       },
       "configuration" : {
-        "ruleChainId" : "15471840-65b9-11ee-bf9d-d3722ee04691"
+        "ruleChainId" : "d7513bb0-b3e2-11ee-9f06-23844b191ab9"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -524,7 +527,7 @@
         "layoutY" : 324
       },
       "configuration" : {
-        "ruleChainId" : "48a57d00-6f17-11ee-bf9d-d3722ee04691"
+        "ruleChainId" : "d7513bb0-b3e2-11ee-9f06-23844b191ab9"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,

@@ -2,7 +2,9 @@
   "entityType" : "DEVICE",
   "entity" : {
     "additionalInfo" : {
-      "description" : "Demo device that is used in sample applications that upload data from DHT11 temperature and humidity sensor"
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -18,26 +20,23 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "d7616850-b3e2-11ee-9f06-23844b191ab9"
+      "id" : "b81da450-cbba-11ee-8a67-399d7ce7d440"
     },
-    "externalId" : {
-      "entityType" : "DEVICE",
-      "id" : "d8c1e2b0-b3e2-11ee-9f06-23844b191ab9"
-    },
+    "externalId" : null,
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
-      "id" : "d8c1e2b0-b3e2-11ee-9f06-23844b191ab9"
+      "id" : "727b8820-cc5c-11ee-bcfa-2927a717380e"
     },
-    "label" : null,
-    "name" : "DHT11 Demo Device",
+    "label" : "",
+    "name" : "G!_CONAFOR",
     "softwareId" : null,
-    "type" : "default"
+    "type" : "iBeacon_MQTT"
   },
   "credentials" : {
-    "credentialsId" : "DHT11_DEMO_TOKEN",
-    "credentialsType" : "ACCESS_TOKEN",
-    "credentialsValue" : null
+    "credentialsId" : "2c989220787e84600a35f0a5d24bda1892b7ff60e400b18208fcb81476f05d68",
+    "credentialsType" : "MQTT_BASIC",
+    "credentialsValue" : "{\"clientId\":\"6b91th7x5bu1i1rdqnuq\",\"userName\":\"wlk5i9rjz8iwl4vvztfs\",\"password\":\"g6qgkcqsvvzfxmom2kos\"}"
   },
   "relations" : [ ],
   "attributes" : {
@@ -46,16 +45,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1705350398344,
+      "lastUpdateTs" : 1708040792757,
       "longValue" : null,
-      "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : null,
-      "jsonValue" : null,
-      "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1705350398361,
-      "longValue" : 1705350398177,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]

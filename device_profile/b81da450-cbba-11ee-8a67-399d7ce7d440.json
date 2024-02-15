@@ -7,10 +7,13 @@
     "defaultQueueName" : null,
     "defaultRuleChainId" : {
       "entityType" : "RULE_CHAIN",
-      "id" : "099c5520-cbba-11ee-8a67-399d7ce7d440"
+      "id" : "200d5340-bee0-11ee-aea5-5b8288fa6bd0"
     },
     "description" : "",
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "b81da450-cbba-11ee-8a67-399d7ce7d440"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE_PROFILE",
