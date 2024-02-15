@@ -1,0 +1,1284 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "e6445740-cbbd-11ee-8a67-399d7ce7d440"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "e5d36d00-cbbd-11ee-8a67-399d7ce7d440"
+    },
+    "name" : "v3.Alarmas Contactos Secos iBeacon",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 1,
+      "toIndex" : 6,
+      "type" : "Cleared"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 7,
+      "type" : "Cleared"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 1,
+      "type" : "False"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 39,
+      "type" : "True"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 16,
+      "type" : "True"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 23,
+      "type" : "True"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 35,
+      "type" : "True"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 23,
+      "type" : "True"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 35,
+      "type" : "True"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 36,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 12,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 12,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 13,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 13,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 14,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 14,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 15,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 15,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 24,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 24,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 32,
+      "type" : "True"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 38,
+      "type" : "True"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 27,
+      "type" : "True"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 31,
+      "type" : "True"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 8,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 6,
+      "type" : "Cleared"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 7,
+      "type" : "Cleared"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 0,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 4,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 4,
+      "type" : "Updated"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 11,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 6,
+      "type" : "Cleared"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 7,
+      "type" : "Cleared"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 20,
+      "type" : "False"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 34,
+      "type" : "True"
+    }, {
+      "fromIndex" : 24,
+      "toIndex" : 9,
+      "type" : "True"
+    }, {
+      "fromIndex" : 25,
+      "toIndex" : 6,
+      "type" : "Cleared"
+    }, {
+      "fromIndex" : 25,
+      "toIndex" : 7,
+      "type" : "Cleared"
+    }, {
+      "fromIndex" : 26,
+      "toIndex" : 25,
+      "type" : "False"
+    }, {
+      "fromIndex" : 26,
+      "toIndex" : 28,
+      "type" : "True"
+    }, {
+      "fromIndex" : 27,
+      "toIndex" : 26,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 28,
+      "toIndex" : 0,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 28,
+      "toIndex" : 4,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 28,
+      "toIndex" : 4,
+      "type" : "Updated"
+    }, {
+      "fromIndex" : 29,
+      "toIndex" : 6,
+      "type" : "Cleared"
+    }, {
+      "fromIndex" : 29,
+      "toIndex" : 7,
+      "type" : "Cleared"
+    }, {
+      "fromIndex" : 30,
+      "toIndex" : 29,
+      "type" : "False"
+    }, {
+      "fromIndex" : 30,
+      "toIndex" : 37,
+      "type" : "True"
+    }, {
+      "fromIndex" : 31,
+      "toIndex" : 30,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 32,
+      "toIndex" : 40,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 34,
+      "toIndex" : 4,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 34,
+      "toIndex" : 4,
+      "type" : "Updated"
+    }, {
+      "fromIndex" : 36,
+      "toIndex" : 17,
+      "type" : "True"
+    }, {
+      "fromIndex" : 36,
+      "toIndex" : 18,
+      "type" : "False"
+    }, {
+      "fromIndex" : 37,
+      "toIndex" : 0,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 37,
+      "toIndex" : 4,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 37,
+      "toIndex" : 4,
+      "type" : "Updated"
+    }, {
+      "fromIndex" : 38,
+      "toIndex" : 2,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 39,
+      "toIndex" : 0,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 39,
+      "toIndex" : 4,
+      "type" : "Created"
+    }, {
+      "fromIndex" : 39,
+      "toIndex" : 4,
+      "type" : "Updated"
+    }, {
+      "fromIndex" : 40,
+      "toIndex" : 41,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 41,
+      "toIndex" : 21,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : 19,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1842,
+        "layoutY" : 716
+      },
+      "configuration" : {
+        "jsScript" : "return metadata.ss_SMSON == \"1\";"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e5f091f0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Enviar SMS",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1067,
+        "layoutY" : 382
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {};\ndetails = metadata.alarmadetalle;\nreturn details;",
+        "alarmType" : "Líquidos 1 presente"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e5f8a840-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Líquidos 1 presente",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 761,
+        "layoutY" : 340
+      },
+      "configuration" : {
+        "jsScript" : "return metadata.alarma == \"1\";"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e5fcee00-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Liquidos 1 activo",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2176,
+        "layoutY" : 710
+      },
+      "configuration" : {
+        "numbersToTemplate" : "${ss_aSMS}",
+        "smsMessageTemplate" : "{alarmadetalle}",
+        "useSystemSmsSettings" : true,
+        "smsProviderConfiguration" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e6029350-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "SMS",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.sms.TbSendSmsNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1401,
+        "layoutY" : 218
+      },
+      "configuration" : {
+        "jsScript" : "return msg.startTs > 1;\n//return (msg.endTs - msg.startTs) > metadata.ss_aSENSIBILIDAD;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e6063cd0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "SENSIBILIDAD",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1581,
+        "layoutY" : 371
+      },
+      "configuration" : {
+        "jsScript" : "return metadata.enviarcorreo == \"1\" && metadata.ss_aBOTON ==\"1\";"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e60b6cf0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Telegraf ALARM",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1666,
+        "layoutY" : 567
+      },
+      "configuration" : {
+        "jsScript" : "return metadata.ss_aON ==\"1\";"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e60e7a30-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Correo Clear Alarm",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1647,
+        "layoutY" : 503
+      },
+      "configuration" : {
+        "jsScript" : "return metadata.ss_aBOTON ==\"1\";"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e6109d10-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Telegraf Clear Alarm",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1577,
+        "layoutY" : 415
+      },
+      "configuration" : {
+        "jsScript" : "return metadata.enviarcorreo == \"1\" && metadata.ss_aON ==\"1\";"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e6161b50-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Correo ALARM",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 581,
+        "layoutY" : 729
+      },
+      "configuration" : {
+        "jsScript" : "msgType = \"POST_ATTRIBUTES_REQUEST\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e61c83f0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "S4_FlujoAire_001_uninstalled",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 887,
+        "layoutY" : 728
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "updateAttributesOnlyOnValueChange" : false,
+        "sendAttributesUpdatedNotification" : false
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e61ef4f0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Salvar Estado Flujos",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 5,
+        "layoutY" : 447
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "aDELAY", "aMUESTREO", "aSENSIBILIDAD", "aHISTERESIS", "aON", "aEMAIL", "aBOT", "aBOTGROUP", "aBOTON", "aSMS", "aSMSON", "S4_FlujoAire_001_uninstalled", "S4_FlujoAire_002_uninstalled", "S4_FlujoAire_003_uninstalled", "prev_ts" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e6220230-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Estado Flujo",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 291,
+        "layoutY" : 98
+      },
+      "configuration" : {
+        "messageNames" : [ "S4_Puerta_001_unlocked" ],
+        "metadataNames" : [ ],
+        "checkAllKeys" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e623fe00-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "S4_Puerta_001_unlocked",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 266,
+        "layoutY" : 367
+      },
+      "configuration" : {
+        "messageNames" : [ "S4_Liquidos_001_uninstalled" ],
+        "metadataNames" : [ ],
+        "checkAllKeys" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e62a8db0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "S4_Liquidos_001_uninstalled",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 262,
+        "layoutY" : 475
+      },
+      "configuration" : {
+        "messageNames" : [ "S4_Liquidos_002_uninstalled" ],
+        "metadataNames" : [ ],
+        "checkAllKeys" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e62d9af0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "S4_Liquidos_002_uninstalled",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 287,
+        "layoutY" : 568
+      },
+      "configuration" : {
+        "messageNames" : [ "S4_Liquidos_003_uninstalled" ],
+        "metadataNames" : [ ],
+        "checkAllKeys" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e6375ef0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "S4_Liquidos_003_uninstalled",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1657,
+        "layoutY" : 222
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var deltatiempo = msg.endTs - msg.startTs;\n// dividir la variable modtiempo entre 60000 ms para 1 minuto retardo, 120,000 ms para dos minutos de retardo, etc.  Se usa el operador  \"%\"\nvar modtiempo = (deltatiempo % metadata.ss_aDELAY);\nmetadata.pasadotiempo = ((deltatiempo+15000) / 60000);\nmetadata.pasadotiempo = metadata.pasadotiempo.toFixed(2);\nif (modtiempo < metadata.ss_aMUESTREO)  \n{\nmetadata.enviarcorreo = 1;\n} else\n{\nmetadata.enviarcorreo = 0;\n}\nif (deltatiempo > metadata.ss_aSENSIBILIDAD && deltatiempo < 2*metadata.ss_aSENSIBILIDAD)\n{\nmetadata.enviarcorreo = 1;    \n}\nreturn {msg: msg, metadata: metadata, msgType: msgType};\n",
+        "tbelScript" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e63a4520-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Retardo envio de alertas",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1489,
+        "layoutY" : 792
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {};\ndetails = metadata.alarmadetalle;\nreturn details;",
+        "alarmType" : "FLUJO AIRE"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e63c8f10-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "FLUJO AIRE",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 1184,
+        "layoutY" : 676
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {};\ndetails = metadata.alarmadetalle;\nreturn details;",
+        "useMessageAlarmData" : false,
+        "alarmType" : "FLUJO AIRE",
+        "severity" : "MAJOR",
+        "propagate" : false,
+        "relationTypes" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e64122f0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "FLUJO AIRE",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 8,
+        "layoutY" : 305
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e6445740-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Switch",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1066,
+        "layoutY" : 272
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {};\ndetails = metadata.alarmadetalle;\nreturn details;",
+        "alarmType" : "Puerta abierta"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e6489d00-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Puerta",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 741,
+        "layoutY" : 241
+      },
+      "configuration" : {
+        "jsScript" : "return metadata.alarma == \"1\";"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e64baa40-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Puerta Abierta",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2203,
+        "layoutY" : 252
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "${ss_aBOT}",
+        "requestMethod" : "POST",
+        "useSimpleClientHttpFactory" : false,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "proxyScheme" : null,
+        "proxyHost" : null,
+        "proxyPort" : 0,
+        "proxyUser" : null,
+        "proxyPassword" : null,
+        "readTimeoutMs" : 0,
+        "maxParallelRequestsCount" : 0,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "useRedisQueueForMsgPersistence" : false,
+        "trimQueue" : false,
+        "maxQueueSize" : 0,
+        "credentials" : {
+          "type" : "anonymous"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e64e6960-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Telegraf-Conafor",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1879,
+        "layoutY" : 258
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var newMsg ={};\nvar pasadotiempo = (msg.endTs - msg.startTs+15000)/60000;\npasadotiempo = pasadotiempo.toFixed(2);\nnewMsg.text = \"Alarma tipo: \" + metadata.alarmatipo + \" || Detalle: \" + metadata.alarmadetalle + \" || Tiempo transcurrido: \" + pasadotiempo+\" minutos\";\nnewMsg.chat_id= metadata.ss_aBOTGROUP;\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e65176a0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Mensaje Telegraf",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 311,
+        "layoutY" : 732
+      },
+      "configuration" : {
+        "messageNames" : [ "S4_FlujoAire_001_uninstalled", "S4_FlujoAire_002_uninstalled", "S4_FlujoAire_003_uninstalled" ],
+        "metadataNames" : [ ],
+        "checkAllKeys" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e6532450-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "S4_FlujoAire_001_uninstalled - 002 y 003",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1064,
+        "layoutY" : 492
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {};\ndetails = metadata.alarmadetalle;\nreturn details;",
+        "alarmType" : "Líquidos 2 presente"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e654f910-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Líquidos 2 presente",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 777,
+        "layoutY" : 453
+      },
+      "configuration" : {
+        "jsScript" : "return metadata.alarma == \"1\";"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e6571bf0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Liquidos 2 activo",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 519,
+        "layoutY" : 454
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "if (msg.S4_Liquidos_002_uninstalled === 1)\n{\n    metadata.alarmatipo = \"Liquidos 2 Activo\";\n    metadata.alarmadetalle = \"Liquidos 2 Activo\";\n    metadata.alarma = 1;\n    return {msg: msg, metadata: metadata, msgType: msgType};\n}\n\n\nmetadata.alarmatipo = \"No hay Líquidos 2\";\nmetadata.alarmadetalle = \"Todo correcto. No hay líquidos en sensor 2\";\nmetadata.alarma = 0;\nreturn {msg: msg, metadata: metadata, msgType: msgType};\n",
+        "tbelScript" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e658f0b0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "S4_Liquidos_002",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 1061,
+        "layoutY" : 436
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {};\ndetails = metadata.alarmadetalle;\nreturn details;",
+        "useMessageAlarmData" : false,
+        "alarmType" : "Líquidos 2 presente",
+        "severity" : "MAJOR",
+        "propagate" : false,
+        "relationTypes" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e65a7750-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Líquidos 2 presente",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1065,
+        "layoutY" : 597
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {};\ndetails = metadata.alarmadetalle;\nreturn details;",
+        "alarmType" : "Líquidos 3 presente"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e65c2500-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Líquidos 3 presente",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 788,
+        "layoutY" : 567
+      },
+      "configuration" : {
+        "jsScript" : "return metadata.alarma == \"1\";"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e65daba0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Liquidos 3 activo",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 517,
+        "layoutY" : 565
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "if (msg.S4_Liquidos_003_uninstalled === 1)\n{\n    metadata.alarmatipo = \"Liquidos 3 Activo\";\n    metadata.alarmadetalle = \"Liquidos 3 Activo\";\n    metadata.alarma = 1;\n    return {msg: msg, metadata: metadata, msgType: msgType};\n}\n\n\nmetadata.alarmatipo = \"No hay Líquidos 3\";\nmetadata.alarmadetalle = \"Todo correcto. No hay líquidos en sensor 3\";\nmetadata.alarma = 0;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};\n",
+        "tbelScript" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e65ee420-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "S4_Liquidos_003",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 355,
+        "layoutY" : 249
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "//msg.S4_Puerta_001_unlocked = 0;\nif (msg.S4_Puerta_001_unlocked === 1)\n{\n    metadata.alarmatipo = \"Puerta Cerrada\";\n    metadata.alarmadetalle = \"Puerta Cerrada Centro Datos\";\n    metadata.alarma = 0;\n    return {msg: msg, metadata: metadata, msgType: msgType};\n}\n\nif (msg.S4_Puerta_001_unlocked === 0)\n{\n    if ((metadata.ts*1 - metadata.ss_prev_ts*1) < metadata.ss_aSENSIBILIDAD)\n    {\n    metadata.alarmatipo = \"Puerta Cerrada\";\n    metadata.alarmadetalle = \"Puerta Cerrada Centro Datos\";\n    metadata.alarma = 2;   // 0 es sin alarma,  1 alarma y 2 es una potencial alarma\n    return {msg: msg, metadata: metadata, msgType: msgType};\n    } else\n    {\n    metadata.alarmatipo = \"Puerta Abierta\";\n    metadata.alarmadetalle = \"Puerta Abierta Centro Datos\";\n    metadata.alarma = 1;\n    return {msg: msg, metadata: metadata, msgType: msgType};\n    }\n}    \nmetadata.alarmatipo = \"Puerta cerrada Centro de Computo\";\nmetadata.alarmadetalle = \"Puerta cerrada de Computo\";\nmetadata.alarma = 0;\nreturn {msg: msg, metadata: metadata, msgType: msgType};\n",
+        "tbelScript" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e66091d0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "S4_Puerta_001",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Alarma Electrica",
+        "layoutX" : 2221,
+        "layoutY" : 425
+      },
+      "configuration" : {
+        "useSystemSmtpSettings" : true,
+        "smtpProtocol" : "smtp",
+        "smtpHost" : "localhost",
+        "smtpPort" : 25,
+        "timeout" : 10000,
+        "enableTls" : false,
+        "tlsVersion" : "TLSv1.2",
+        "enableProxy" : false,
+        "proxyHost" : null,
+        "proxyPort" : null,
+        "proxyUser" : null,
+        "proxyPassword" : null,
+        "username" : null,
+        "password" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e6648970-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Envio de correo",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.mail.TbSendEmailNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 1063,
+        "layoutY" : 220
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {};\ndetails = metadata.alarmadetalle;\nreturn details;",
+        "useMessageAlarmData" : false,
+        "alarmType" : "Puerta abierta",
+        "severity" : "MINOR",
+        "propagate" : false,
+        "relationTypes" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e667bdc0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Puerta",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1932,
+        "layoutY" : 425
+      },
+      "configuration" : {
+        "fromTemplate" : "sender@tkmecloud.io",
+        "toTemplate" : "${ss_aEMAIL}",
+        "ccTemplate" : "\n",
+        "bccTemplate" : null,
+        "subjectTemplate" : "${alarmadetalle}",
+        "mailBodyType" : null,
+        "bodyTemplate" : "El Dispositivo ${deviceName} tiene una alarma de: ${alarmatipo}\n\nDetalle de la alarma: ${alarmadetalle}\n\n\n"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e66acb00-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Alertas Contacto Seco",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.mail.TbMsgToEmailNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1123,
+        "layoutY" : 803
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return (metadata.ss_S4_FlujoAire_001_uninstalled + metadata.ss_S4_FlujoAire_002_uninstalled + metadata.ss_S4_FlujoAire_003_uninstalled) > 0;",
+        "tbelScript" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e66cc6d0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "FLUJO DE AIRES",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 1065,
+        "layoutY" : 550
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {};\ndetails = metadata.alarmadetalle;\nreturn details;",
+        "useMessageAlarmData" : false,
+        "alarmType" : "Líquidos 3 presente",
+        "severity" : "MAJOR",
+        "propagate" : false,
+        "relationTypes" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e66ee9b0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Líquidos 3 presente",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 501,
+        "layoutY" : 343
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "if (msg.S4_Liquidos_001_uninstalled === 1)\n{\n    metadata.alarmatipo = \"Liquidos 1 Activo\";\n    metadata.alarmadetalle = \"Liquidos 1 Activo\";\n    metadata.alarma = 1;\n    return {msg: msg, metadata: metadata, msgType: msgType};\n}\n\n\nmetadata.alarmatipo = \"No hay Líquidos 1\";\nmetadata.alarmadetalle = \"Todo correcto. No hay líquidos en sensor 1\";\nmetadata.alarma = 0;\nreturn {msg: msg, metadata: metadata, msgType: msgType};\n",
+        "tbelScript" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e6715ab0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "S4_Liquidos_001",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 1068,
+        "layoutY" : 332
+      },
+      "configuration" : {
+        "alarmDetailsBuildJs" : "var details = {};\ndetails = metadata.alarmadetalle;\nreturn details;",
+        "useMessageAlarmData" : false,
+        "alarmType" : "Líquidos 1 presente",
+        "severity" : "MAJOR",
+        "propagate" : false,
+        "relationTypes" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e67419d0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Líquidos 1 presente",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Se salva el tiempo de la alarma y se compara con el timestamp para ver si ya paso el tiempo de sensibilidad.",
+        "layoutX" : 532,
+        "layoutY" : 90
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var msg = {};\nmsg.prev_ts = metadata.ss_prev_ts;\nif (metadata.alarma == \"0\")\n{\n        msg.prev_ts = metadata.ts;\n}\nmsgType = \"POST_ATTRIBUTES_REQUEST\";\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : null
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e67663c0-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Salvar tiempo de alarma",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Se salva el time stamp asociado a la puerta",
+        "layoutX" : 804,
+        "layoutY" : 92
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : false
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e6781170-cbbd-11ee-8a67-399d7ce7d440"
+      },
+      "name" : "Salvar atributos de timestamp",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

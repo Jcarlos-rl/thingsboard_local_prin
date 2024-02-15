@@ -1,0 +1,126 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "b81da450-cbba-11ee-8a67-399d7ce7d440"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "c8a47240-cbba-11ee-8a67-399d7ce7d440"
+    },
+    "label" : "",
+    "name" : "G1_CONAFOR",
+    "softwareId" : null,
+    "type" : "iBeacon_MQTT"
+  },
+  "credentials" : {
+    "credentialsId" : "XCAEizRYAXVftl6wfZCo",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "S4_FlujoAire_001_battery",
+      "lastUpdateTs" : 1708015170985,
+      "longValue" : null,
+      "strValue" : "battery"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "S4_FlujoAire_001_rssi",
+      "lastUpdateTs" : 1708015170985,
+      "longValue" : null,
+      "strValue" : "rssi"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "S4_FlujoAire_001_uninstalled",
+      "lastUpdateTs" : 1708015170985,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "S4_FlujoAire_001_unlocked",
+      "lastUpdateTs" : 1708015170985,
+      "longValue" : null,
+      "strValue" : "unloked"
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1708015784823,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1708015784857,
+      "longValue" : 1708015784822,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1708015172140,
+      "longValue" : 1708015170568,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "macAire1",
+      "lastUpdateTs" : 1707971716876,
+      "longValue" : null,
+      "strValue" : "AC233FA4DAA6"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "macAire2",
+      "lastUpdateTs" : 1707971729368,
+      "longValue" : null,
+      "strValue" : "AC233FA4DC60"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "macAire3",
+      "lastUpdateTs" : 1707971740754,
+      "longValue" : null,
+      "strValue" : "AC233FA4DBC1"
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}
