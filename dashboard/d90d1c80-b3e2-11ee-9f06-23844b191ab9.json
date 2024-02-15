@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "assignedCustomers" : [ ],
+    "assignedCustomers" : null,
     "configuration" : {
       "widgets" : {
         "f33c746c-0dfc-c212-395b-b448c8a17209" : {
@@ -1241,10 +1241,7 @@
       },
       "filters" : { }
     },
-    "externalId" : {
-      "entityType" : "DASHBOARD",
-      "id" : "d90d1c80-b3e2-11ee-9f06-23844b191ab9"
-    },
+    "externalId" : null,
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "d90d1c80-b3e2-11ee-9f06-23844b191ab9"

@@ -5,10 +5,7 @@
       "description" : "Send notification to user when any alarm was assigned to him"
     },
     "enabled" : true,
-    "externalId" : {
-      "entityType" : "NOTIFICATION_RULE",
-      "id" : "d7b24770-b3e2-11ee-9f06-23844b191ab9"
-    },
+    "externalId" : null,
     "id" : {
       "entityType" : "NOTIFICATION_RULE",
       "id" : "d7b24770-b3e2-11ee-9f06-23844b191ab9"

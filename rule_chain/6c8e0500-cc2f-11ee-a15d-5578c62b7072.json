@@ -1,0 +1,829 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Cadena de reglas para dispositivos iBeacon que se comunican por MQTT. Está acoplada para el proyecto de Multiva."
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "6dac1f30-cc2f-11ee-a15d-5578c62b7072"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "6c8e0500-cc2f-11ee-a15d-5578c62b7072"
+    },
+    "name" : "iBeacon_MQTT.V2",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 2,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 8,
+      "type" : "False"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 0,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 3,
+      "type" : "Post attributes"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 5,
+      "type" : "RPC Request from Device"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 6,
+      "type" : "Other"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 7,
+      "type" : "RPC Request to Device"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 24,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 13,
+      "type" : "True"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 20,
+      "type" : "False"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 12,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 12,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 11,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 11,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 14,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 14,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 17,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 10,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 15,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 10,
+      "type" : "False"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 15,
+      "type" : "True"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 16,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 16,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 19,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 19,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 18,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 18,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 23,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 23,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 9,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 22,
+      "toIndex" : 9,
+      "type" : "False"
+    }, {
+      "fromIndex" : 22,
+      "toIndex" : 21,
+      "type" : "True"
+    }, {
+      "fromIndex" : 23,
+      "toIndex" : 22,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 23,
+      "toIndex" : 22,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 24,
+      "toIndex" : 25,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 25,
+      "toIndex" : 26,
+      "type" : "True"
+    } ],
+    "firstNodeIndex" : 4,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 514,
+        "layoutY" : 6
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "macTH1", "macTH2", "macTH3", "macTH4", "macTH5", "macTH6", "macPuerta", "macAire1", "macAire2", "macAire3", "macLiquidos2", "macLiquidos3", "macLiquidos1" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6d7d1ff0-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "obtenerMacSensoresG1",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Este script valida que las mac de cada sensor estén correctamente configuradas y asignadas al tipo de sensor que les corresponde. Si están correctamente configuradas y asignadas, entonces envía los valores separados. Esto suple a los conversores de datos y a las integraciones.",
+        "layoutX" : 764,
+        "layoutY" : 6
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "//Este script revisa las MAC que se configuraron para los sensores de TH, Liquidos, Puerta, CFE y UPS, y separa las variables correspondientes.\n\nfunction validarTemperatura(temperatura){\n    if(temperatura <= 0 || temperatura >= 0.01)\n        {return true;}\n        else\n        {return false;}\n}\n\nfunction convertirPuerta(valor){\n    return valor ? 0:1;\n}\n\nfunction convertirAire(valor){\n    return valor ? 0:1;\n}\n\nfunction convertirLiquidos(valor){\n    return valor ? 0:1;\n}\n\nswitch (msg.mac){\n    case metadata.ss_macTH1:\n        if (msg.type == \"S1\"){\n        \n        if(!validarTemperatura(msg.temperature))\n        {\n            var newMSG = {error: \"Lectura de temperatura errónea\"};\n            break;\n        }\n        \n        var newMSG = {\n        S1_TH_001_rssi: msg.rssi,\n        S1_TH_001_battery: msg.battery,\n        S1_TH_001_temperature: msg.temperature,\n        S1_TH_001_humidity: msg.humidity\n        };\n        }else{\n        var newMSG = {error: \"No coincide tipo de sensor con variable. Revisa la MAC\"};\n        }\n        break;\n        case metadata.ss_macTH2:\n        if (msg.type == \"S1\"){\n        var newMSG = {\n        S1_TH_002_rssi: msg.rssi,\n        S1_TH_002_battery: msg.battery,\n        S1_TH_002_temperature: msg.temperature,\n        S1_TH_002_humidity: msg.humidity\n        };\n        }else{\n        var newMSG = {error: \"No coincide tipo de sensor con variable. Revisa la MAC\"};\n        }\n        break;\n    case metadata.ss_macTH3:\n        if (msg.type == \"S1\"){\n        var newMSG = {\n        S1_TH_003_rssi: msg.rssi,\n        S1_TH_003_battery: msg.battery,\n        S1_TH_003_temperature: msg.temperature,\n        S1_TH_003_humidity: msg.humidity\n        };\n        }else{\n        var newMSG = {error: \"No coincide tipo de sensor con variable. Revisa la MAC\"};\n        }\n        break;\n    case metadata.ss_macTH4:\n        if (msg.type == \"S1\"){\n        var newMSG = {\n        S1_TH_004_rssi: msg.rssi,\n        S1_TH_004_battery: msg.battery,\n        S1_TH_004_temperature: msg.temperature,\n        S1_TH_004_humidity: msg.humidity\n        };\n        }else{\n        var newMSG = {error: \"No coincide tipo de sensor con variable. Revisa la MAC\"};\n        }\n        break;\n    case metadata.ss_macTH5:\n        if (msg.type == \"S1\"){\n        var newMSG = {\n        S1_TH_005_rssi: msg.rssi,\n        S1_TH_005_battery: msg.battery,\n        S1_TH_005_temperature: msg.temperature,\n        S1_TH_005_humidity: msg.humidity\n        };\n        }else{\n        var newMSG = {error: \"No coincide tipo de sensor con variable. Revisa la MAC\"};\n        }\n        break;\n    case metadata.ss_macTH6:\n        if (msg.type == \"S1\"){\n        var newMSG = {\n        S1_TH_006_rssi: msg.rssi,\n        S1_TH_006_battery: msg.battery,\n        S1_TH_006_temperature: msg.temperature,\n        S1_TH_006_humidity: msg.humidity\n        };\n        }else{\n        var newMSG = {error: \"No coincide tipo de sensor con variable. Revisa la MAC\"};\n        }\n        break;   \n        \n    case metadata.ss_macPuerta:\n        if (msg.type == 'S4'){\n        var newMSG = {\n        S4_Puerta_001_rssi: msg.rssi,\n        S4_Puerta_001_battery: msg.battery,\n        S4_Puerta_001_unlocked: convertirPuerta(msg.unlocked),\n        S4_Puerta_001_uninstalled: msg.uninstalled\n        };\n        }else{\n          var newMSG = {error: \"No coincide tipo de sensor con variable. Revisa la MAC\"};\n        }\n        break;\n        \n    case metadata.ss_macLiquidos1:\n        if (msg.type == 'S4'){\n        var newMSG = {\n        S4_Liquidos_001_rssi: msg.rssi,\n        S4_Liquidos_001_battery: msg.battery,\n        S4_Liquidos_001_unlocked: msg.unlocked,\n        S4_Liquidos_001_uninstalled: convertirLiquidos(msg.uninstalled)\n        };\n        }else{\n          var newMSG = {error: \"No coincide tipo de sensor con variable. Revisa la MAC\"};\n        }\n        break;\n            case metadata.ss_macLiquidos2:\n        if (msg.type == 'S4'){\n        var newMSG = {\n        S4_Liquidos_002_rssi: msg.rssi,\n        S4_Liquidos_002_battery: msg.battery,\n        S4_Liquidos_002_unlocked: msg.unlocked,\n        S4_Liquidos_002_uninstalled: convertirLiquidos(msg.uninstalled)\n        };\n        }else{\n          var newMSG = {error: \"No coincide tipo de sensor con variable. Revisa la MAC\"};\n        }\n        break;\n            case metadata.ss_macLiquidos3:\n        if (msg.type == 'S4'){\n        var newMSG = {\n        S4_Liquidos_003_rssi: msg.rssi,\n        S4_Liquidos_003_battery: msg.battery,\n        S4_Liquidos_003_unlocked: msg.unlocked,\n        S4_Liquidos_003_uninstalled: convertirLiquidos(msg.uninstalled)\n        };\n        }else{\n          var newMSG = {error: \"No coincide tipo de sensor con variable. Revisa la MAC\"};\n        }\n        break;\n        \n        case metadata.ss_macAire1:\n        if (msg.type == 'S4'){\n        var newMSG = {\n        S4_FlujoAire_001_rssi: msg.rssi,\n        S4_FlujoAire_001_battery: msg.battery,\n        S4_FlujoAire_001_unlocked: msg.unlocked,\n        S4_FlujoAire_001_uninstalled: convertirAire(msg.uninstalled)\n        };\n        }else{\n          var newMSG = {error: \"No coincide tipo de sensor con variable. Revisa la MAC\"};\n        }\n        break;\n        case metadata.ss_macAire2:\n        if (msg.type == 'S4'){\n        var newMSG = {\n        S4_FlujoAire_002_rssi: msg.rssi,\n        S4_FlujoAire_002_battery: msg.battery,\n        S4_FlujoAire_002_unlocked: msg.unlocked,\n        S4_FlujoAire_002_uninstalled: convertirAire(msg.uninstalled)\n        };\n        }else{\n          var newMSG = {error: \"No coincide tipo de sensor con variable. Revisa la MAC\"};\n        }\n        break;\n        case metadata.ss_macAire3:\n        if (msg.type == 'S4'){\n        var newMSG = {\n        S4_FlujoAire_003_rssi: msg.rssi,\n        S4_FlujoAire_003_battery: msg.battery,\n        S4_FlujoAire_003_unlocked: msg.unlocked,\n        S4_FlujoAire_003_uninstalled: convertirAire(msg.uninstalled)\n        };\n        }else{\n          var newMSG = {error: \"No coincide tipo de sensor con variable. Revisa la MAC\"};\n        }\n        break;\n    default:\n        var newMSG = {error: \"La MAC registrada no coincide con ningún sensor.\"};\n}\n\n        var newMetadata = {\n        deviceType: metadata.deviceType,\n        deviceName: metadata.deviceName,\n        ts: metadata.ts};\n\nreturn {msg: newMSG, metadata: newMetadata, msgType: msgType};\n\n\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6d8f9680-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "separarVariables",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Revisa si la separación de variables no marcó error. Si marcó error, es porque la MAC del sensor no coincide con ninguna de las registradas y descarta el paquete. Conectamos cuando el resultado sea FALSO, ya que cuando es verdadero, es cuando marcó error.",
+        "layoutX" : 1019,
+        "layoutY" : 5
+      },
+      "configuration" : {
+        "messageNames" : [ "error" ],
+        "metadataNames" : [ ],
+        "checkAllKeys" : true
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6d9e8aa0-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "noError",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 512,
+        "layoutY" : 457
+      },
+      "configuration" : {
+        "scope" : "CLIENT_SCOPE",
+        "updateAttributesOnlyOnValueChange" : false,
+        "notifyDevice" : true,
+        "sendAttributesUpdatedNotification" : false
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6da679e0-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Save Client Attributes",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 292,
+        "layoutY" : 150
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6dac1f30-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Message Type Switch",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 513,
+        "layoutY" : 357
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);",
+        "tbelScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6db2aee0-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Log RPC from Device",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 510,
+        "layoutY" : 556
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);",
+        "tbelScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6db80610-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Log Other",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 511,
+        "layoutY" : 657
+      },
+      "configuration" : {
+        "timeoutInSeconds" : 60
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6dc01c60-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "RPC Call Request",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rpc.TbSendRPCRequestNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1258,
+        "layoutY" : 6
+      },
+      "configuration" : {
+        "messageNames" : [ "S1_TH_001_temperature", "S1_TH_002_temperature", "S1_TH_003_temperature", "S1_TH_004_temperature", "S1_TH_005_temperature", "S1_TH_006_temperature" ],
+        "metadataNames" : [ ],
+        "checkAllKeys" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6dc8f600-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "SensorTemperatura",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2399,
+        "layoutY" : 205
+      },
+      "configuration" : {
+        "ruleChainId" : "fa35fe70-6f0b-11ee-8056-b710efbb40d5"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6dd09720-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Contactos Secos",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2675,
+        "layoutY" : 433
+      },
+      "configuration" : {
+        "ruleChainId" : "11c11020-6f0c-11ee-8056-b710efbb40d5"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6ddc08d0-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Temperarturas",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1813,
+        "layoutY" : 208
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// se crea la variable para controlar historico de la medición previa\nvar NewmsgType = \"POST_ATTRIBUTES_REQUEST\";\nvar prevTH = {};\nvar contador = 0;\n// se obtiene en la variable clave el modelo de la medición que se está recibiendo\nfor (var clave in msg){\n    contador++;\n    if (clave === \"S1_TH_001_temperature\" || clave === \"S1_TH_002_temperature\" || clave === \"S1_TH_003_temperature\" || clave === \"S1_TH_004_temperature\" || clave === \"S1_TH_005_temperature\" || clave === \"S1_TH_006_temperature\")\n    {\n        break;\n    }\n}\n// se crea la variable para controlar historico de la medición previa\n// Se inicializa con los valores previo, si existe cambio, se cambian los valores, si no se vuelven a salvar los mismos valores.\n\nprevTH[\"prevTE-\"+clave.substring(0,9)] = metadata[\"ss_prevTE-\"+clave.substring(0,9)]*1;\nprevTH[\"prevHR-\"+clave.substring(0,9)] = metadata[\"ss_prevHR-\"+clave.substring(0,9)]*1;\nprevTH[\"prevTS-\"+clave.substring(0,9)]=metadata[\"ss_prevTS-\"+clave.substring(0,9)]*1;\n\n// si alguna de las temperaturas están por arriba del límite máximo se hace el comparativo\nif (msg[clave] > metadata.ss_aTH*1 )\n{\n//si algunos de los temperaturas sobrepasa el limite superior se entra aqui y se considera como una posible medicion con ruido y ejecutamos la histéresis\n//si el tiempo en que ocurre es mayor que el tiempo de la medición anterior + la histérisis se toma la medición como válida\n//se actualiza el tiempo en que ocurrio esta medicion de alto temperatura y se actualiza como medicion previa válida.\n    if (metadata.ts*1 > (metadata[\"ss_prevTS-\"+clave.substring(0,9)]*1 + metadata.ss_aHISTERESIS*1))\n            {   \n                prevTH[\"prevTS-\"+clave.substring(0,9)] = metadata.ts*1;\n\t\t\t\tprevTH[\"prevTE-\"+clave.substring(0,9)] = msg[clave];\n\t\t\t\tprevTH[\"prevHR-\"+clave.substring(0,9)] = msg[clave.substring(0,10)+\"humidity\"];\n\t\t\t}\n\n}\nif (msg[clave] < metadata.ss_aTL*1 )\n//si algunos de los temperaturas sobrepasa el limite inferior se entra aqui y se considera como una posible medicion con ruido y ejecutamos la histéresis\n//si el tiempo en que ocurre es mayor que el tiempo de la medición anterior + la histérisis se toma la medición como válida\n//se actualiza el tiempo en que ocurrio esta medicion de baja temperatura y se actualiza como medicion previa válida.\n\n{\n\t if (metadata.ts*1 > (metadata[\"ss_prevTS-\"+clave.substring(0,9)]*1 + metadata.ss_aHISTERESIS*1))\n            {      \n                prevTH[\"prevTS-\"+clave.substring(0,9)] = metadata.ts*1;\n\t\t\t\tprevTH[\"prevTE-\"+clave.substring(0,9)] = msg[clave];\n\t\t\t\tprevTH[\"prevHR-\"+clave.substring(0,9)] = msg[clave.substring(0,10)+\"humidity\"];\n\t\t\t} \n} \n\n// Si los datos estan dentro de los parámetros, se actualiza el valor previo con el valor medido.  Esto \n// importante pues permitira usarlo como comparativo con la medición actual y determinar si se graba o no el\n//nuevo dato en la base de datos. \nif (msg[clave] < metadata.ss_aTH*1 && msg[clave] > metadata.ss_aTL )\t\t\n\t{\n                prevTH[\"prevTS-\"+clave.substring(0,9)] = metadata.ts*1;\n\t\t\t\tprevTH[\"prevTE-\"+clave.substring(0,9)] = msg[clave];\n\t\t\t\tprevTH[\"prevHR-\"+clave.substring(0,9)] = msg[clave.substring(0,10)+\"humidity\"];\n\t} \n\nreturn {msg: prevTH, metadata: metadata, msgType: NewmsgType};",
+        "tbelScript" : "var contador = 0;\nvar temperatura;\nfor (var clave in msg){\n    contador++;\n    if (clave === \"S1_TH_001_temperature\" || clave === \"S1_TH_002_temperature\" || clave === \"S1_TH_003_temperature\" || clave === \"S1_TH_004_temperature\" || clave === \"S1_TH_005_temperature\" || clave === \"S1_TH_006_temperature\"){\n        temperatura = msg[clave];\n        metadata[clave]=temperatura;\n        break;\n    }\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6de18710-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Guarda el Valor Previo de Temperatura",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2126,
+        "layoutY" : 209
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : false
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6ded9500-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Salvar Temperatura Previa",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Este nodo agrega los valores previos cargados en atributos del iBeacon asociado.  Corresponde a los tiempos y valores de temperatura y humedad previos validos.",
+        "layoutX" : 1491,
+        "layoutY" : 207
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "prevTS-S1_TH_001", "prevTS-S1_TH_002", "prevTS-S1_TH_003", "prevTS-S1_TH_004", "prevTS-S1_TH_005", "prevTS-S1_TH_006", "aTH", "aTL", "aHH", "aHL", "aCONTEO", "aHISTERESIS", "prevTE-S1_TH_001", "prevTE-S1_TH_002", "prevTE-S1_TH_003", "prevTE-S1_TH_004", "prevTE-S1_TH_005", "prevTE-S1_TH_006", "prevHR-S1_TH_001", "prevHR-S1_TH_002", "prevHR-S1_TH_003", "prevHR-S1_TH_004", "prevHR-S1_TH_005", "prevHR-S1_TH_006", "aMUESTREO" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6e014410-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Valores Previos",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Dependiendo de la cantidad de muestras (aCONTEO), se guarda el dato. Si el valor promedio es igual y el CONTEO máximo no se ha llegado. No se guarda el dato.  Si el VLA es dintinto, se salva el dato y se continua.  Si el valor el mismo, se deja pasar el dato pero no se salva.  Esto ocurre solo una vez que los datos han sido filtrados en ruido.",
+        "layoutX" : 1812,
+        "layoutY" : 333
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// se crea la variable para controlar historico de la medición previa\nvar prevTH = {};\nvar contador = 0;\n// se obtiene en la variable clave el modelo de la medición que se está recibiendo\nfor (var clave in msg){\n    contador++;\n    if (clave === \"S1_TH_001_temperature\" || clave === \"S1_TH_002_temperature\" || clave === \"S1_TH_003_temperature\" || clave === \"S1_TH_004_temperature\" || clave === \"S1_TH_005_temperature\" || clave === \"S1_TH_006_temperature\")\n    {\n        msg.clave=clave;\n        break;\n    }\n}\n// se crea la variable para controlar historico de la medición previa\n// Se inicializa con los valores previo, si existe cambio, se cambian los valores, si no se vuelven a salvar los mismos valores.\n\nprevTH[\"prevTE-\"+clave.substring(0,9)] = metadata[\"ss_prevTE-\"+clave.substring(0,9)]*1;\nprevTH[\"prevHR-\"+clave.substring(0,9)] = metadata[\"ss_prevHR-\"+clave.substring(0,9)]*1;\nprevTH[\"prevTS-\"+clave.substring(0,9)]= metadata[\"ss_prevTS-\"+clave.substring(0,9)]*1;\n\n// si alguna de las temperaturas están por arriba del límite máximo se hace el comparativo\nif (msg[clave] > metadata.ss_aTH*1 )\n{\n//si algunos de los temperaturas sobrepasa el limite superior se entra aqui y se considera como una posible medicion con ruido y ejecutamos la histéresis\n//si el tiempo en que ocurre es mayor que el tiempo de la medición anterior + la histérisis se toma la medición como válida\n//si el tiempo es menor, se rescata el valor previo y se usa como dato.  El deja el tiempo anterior\n    if (metadata.ts*1 < (metadata[\"ss_prevTS-\"+clave.substring(0,9)]*1 + metadata.ss_aHISTERESIS*1))\n            {   \n                msg[clave] = prevTH[\"prevTE-\"+clave.substring(0,9)];\n\t\t\t\tmsg[clave.substring(0,10)+\"humidity\"] = prevTH[\"prevHR-\"+clave.substring(0,9)];\n\t\t\t}\n}\nif (msg[clave] < metadata.ss_aTL*1 )\n//si algunos de los temperaturas sobrepasa el limite inferior se entra aqui y se considera como una posible medicion con ruido y ejecutamos la histéresis\n//si el tiempo en que ocurre es mayor que el tiempo de la medición anterior + la histérisis se toma la medición como válida\n//si el tiempo es menor, se rescata el valor previo y se usa como dato.  El deja el tiempo anterior\n\n{\n\t if (metadata.ts*1 < (metadata[\"ss_prevTS-\"+clave.substring(0,9)]*1 + metadata.ss_aHISTERESIS*1))\n            {      \n                msg[clave] = prevTH[\"prevTE-\"+clave.substring(0,9)];\n\t\t\t\tmsg[clave.substring(0,10)+\"humidity\"] = prevTH[\"prevHR-\"+clave.substring(0,9)];\n\n\t\t\t} \n} \n\n// Si los datos estan dentro de los parámetros, se actualiza el valor previo con el valor medido.  Esto \n// importante pues permitira usarlo como comparativo con la medición actual y determinar si se graba o no el\n//nuevo dato en la base de datos. \n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "var contador = 0;\nvar temperatura;\nfor (var clave in msg){\n    contador++;\n    if (clave === \"S1_TH_001_temperature\" || clave === \"S1_TH_002_temperature\" || clave === \"S1_TH_003_temperature\" || clave === \"S1_TH_004_temperature\" || clave === \"S1_TH_005_temperature\" || clave === \"S1_TH_006_temperature\"){\n        temperatura = msg[clave];\n        metadata[clave]=temperatura;\n        break;\n    }\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6e0e3c60-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Filtrado de TH a guardar",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 2675,
+        "layoutY" : 331
+      },
+      "configuration" : {
+        "defaultTTL" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6e17d950-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Save Timeseries",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Si la condición de grabar se ha activado, se guarda el dato en time series.",
+        "layoutX" : 2429,
+        "layoutY" : 332
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return msg.grabar == 1;",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6e2064d0-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Se debe grabar",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Dependiendo de la cantidad de muestras (aCONTEO), se guarda el dato. Si el valor promedio es igual y el CONTEO máximo no se ha llegado. No se guarda el dato.  Si el VLA es dintinto, se salva el dato y se continua.  Si el valor el mismo, se deja pasar el dato pero no se salva.  Esto ocurre solo una vez que los datos han sido filtrados en ruido.",
+        "layoutX" : 2125,
+        "layoutY" : 333
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "msg.grabar=1;\nvar tiempo=0;\n// se hace la comparación del tiempo de muestreo y hasta las veces de conteo especificadas\n// si el dato se repite hasta las veces del conteo especificadas, solo se salva una vez\n// si el voltaje promedio VLA es distinto, se autoriza grabar el dato.\ntiempo = metadata[\"ss_prevTS-\"+msg.clave.substring(0,9)]*1+(metadata.ss_aMUESTREO*metadata.ss_aCONTEO*1);\nif ((msg[msg.clave] == metadata[\"ss_prevTE-\"+msg.clave.substring(0,9)]*1) && (metadata.ts*1 < tiempo))\n{\nmsg.grabar=0;    \n}\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6e27dee0-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Grabar medición",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1814,
+        "layoutY" : 6
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// se crea la variable para controlar historico de la medición previa\nvar NewmsgType = \"POST_ATTRIBUTES_REQUEST\";\nvar prevCS = {};\nvar contador = 0;\n// se obtiene en la variable clave el modelo de la medición que se está recibiendo\nfor (var clave in msg){\n    contador++;\n    if (clave === \"S4_Puerta_001_unlocked\" || clave === \"S4_Liquidos_001_uninstalled\" || clave === \"S4_Liquidos_002_uninstalled\" || clave === \"S4_Liquidos_003_uninstalled\" || clave === \"S4_FlujoAire_001_uninstalled\" || clave === \"S4_FlujoAire_002_uninstalled\" || clave === \"S4_FlujoAire_003_uninstalled\")\n    {\n        break;\n    }\n}\n// se crea la variable para controlar historico de la medición previa\n// Se inicializa con los valores previo, si existe cambio, se cambian los valores, si no se vuelven a salvar los mismos valores.\n\nprevCS[\"prevCS-\"+clave.substring(0,16)] = msg[clave]*1;\n\nreturn {msg: prevCS, metadata: metadata, msgType: NewmsgType};",
+        "tbelScript" : "var contador = 0;\nvar temperatura;\nfor (var clave in msg){\n    contador++;\n    if (clave === \"S1_TH_001_temperature\" || clave === \"S1_TH_002_temperature\" || clave === \"S1_TH_003_temperature\" || clave === \"S1_TH_004_temperature\" || clave === \"S1_TH_005_temperature\" || clave === \"S1_TH_006_temperature\"){\n        temperatura = msg[clave];\n        metadata[clave]=temperatura;\n        break;\n    }\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6e2d3610-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Guarda el Valor Previo de Contacto Seco",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2127,
+        "layoutY" : 6
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : false
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6e32db60-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Salvar Contacto Seco Previo",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Este nodo agrega los valores previos cargados en atributos del iBeacon asociado.  Corresponde a los tiempos y valores de temperatura y humedad previos validos.",
+        "layoutX" : 1492,
+        "layoutY" : 6
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "aCONTEO", "aHISTERESIS", "aMUESTREO", "prevCS-S4_Puerta_001_un", "prevCS-S4_Liquidos_001_", "prevCS-S4_Liquidos_002_", "prevCS-S4_Liquidos_003_", "prevCS-S4_FlujoAire_001", "prevCS-S4_FlujoAire_002", "prevCS-S4_FlujoAire_003" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6e3b18c0-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Valores Previos",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 2397,
+        "layoutY" : 104
+      },
+      "configuration" : {
+        "defaultTTL" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6e4048e0-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Save Timeseries",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Si la condición de grabar se ha activado, se guarda el dato en time series.",
+        "layoutX" : 2126,
+        "layoutY" : 106
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return msg.grabar == 1;",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6e483820-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Se debe grabar",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Dependiendo de la cantidad de muestras (aCONTEO), se guarda el dato. Si el valor promedio es igual y el CONTEO máximo no se ha llegado. No se guarda el dato.  Si el VLA es dintinto, se salva el dato y se continua.  Si el valor el mismo, se deja pasar el dato pero no se salva.  Esto ocurre solo una vez que los datos han sido filtrados en ruido.",
+        "layoutX" : 1814,
+        "layoutY" : 106
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "msg.grabar=1;\n// se crea la variable para controlar historico de la medición previa\nvar contador = 0;\n// se obtiene en la variable clave el modelo de la medición que se está recibiendo\nfor (var clave in msg){\n    contador++;\n    if (clave === \"S4_Puerta_001_unlocked\" || clave === \"S4_Liquidos_001_uninstalled\" || clave === \"S4_Liquidos_002_uninstalled\" || clave === \"S4_Liquidos_003_uninstalled\" || clave === \"S4_FlujoAire_001_uninstalled\" || clave === \"S4_FlujoAire_002_uninstalled\" || clave === \"S4_FlujoAire_003_uninstalled\")\n    {\n        break;\n    }\n}\n\n// se graba si el dato es distinto al anterior.\n\nif (msg[clave] == metadata[\"ss_prevCS-\"+clave.substring(0,16)]*1)\n{\nmsg.grabar=0;    \n}\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6e52bf70-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Grabar medición",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 588,
+        "layoutY" : 150
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "metadata.ok = false;\n\nif(metadata.deviceName === 'G1_CONAFOR'){\n    metadata.tokenID = \"97hm5wvpxvtmbl1o27w5\";\n    metadata.ok = true;\n}\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6e64e7e0-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Definir dispositivo",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 848,
+        "layoutY" : 149
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return metadata.ok === \"true\";",
+        "tbelScript" : "return metadata.ok;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6e700b70-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Enviar información",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1079,
+        "layoutY" : 149
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "http://vw01.tkmecloud.io/api/v1/${tokenID}/telemetry",
+        "requestMethod" : "POST",
+        "useSimpleClientHttpFactory" : false,
+        "ignoreRequestBody" : false,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "proxyScheme" : null,
+        "proxyHost" : null,
+        "proxyPort" : 0,
+        "proxyUser" : null,
+        "proxyPassword" : null,
+        "readTimeoutMs" : 0,
+        "maxParallelRequestsCount" : 10,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "useRedisQueueForMsgPersistence" : false,
+        "trimQueue" : null,
+        "maxQueueSize" : null,
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "parseToPlainText" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6e7eb170-cc2f-11ee-a15d-5578c62b7072"
+      },
+      "name" : "Enviar a VW01",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -6,10 +6,7 @@
     },
     "configuration" : null,
     "debugMode" : false,
-    "externalId" : {
-      "entityType" : "RULE_CHAIN",
-      "id" : "d529c6d0-bb40-11ee-9476-cb13d7e4a94b"
-    },
+    "externalId" : null,
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
       "id" : "d5b712b0-bb40-11ee-9476-cb13d7e4a94b"
@@ -18,7 +15,7 @@
       "entityType" : "RULE_CHAIN",
       "id" : "d529c6d0-bb40-11ee-9476-cb13d7e4a94b"
     },
-    "name" : "iBeacon_MQTT_Multiva_Ori",
+    "name" : "iBeacon_MQTT_Ori",
     "root" : false,
     "type" : "CORE"
   },
